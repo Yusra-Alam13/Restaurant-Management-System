@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin -reviews</title>
+    <link rel="stylesheet" href="./css/admin-reviews.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>    
+    <Header>
+        <div class="prices">
+            <a  href="admin-price.html">Food Price</a>
+        </div>
+        <div class="Employees"> 
+            <a  href="admin-employee.html">Employees</a>
+            </div>
+             <div class="reviews">
+                 <a  href="admin-review.html">Customer Reviews</a>
+             </div>
+             
+             <div class="admin">
+                <a  href="admin.html">Admin</a>
+             
+             </div>
+    </Header>
+    <div class="main">
+        <div class="add-price" style="border: green solid;">
+        <form> 
+            <h2>Add Price Of The Food</h2>
+            <label for="employee_name">Food Name</label><br>
+            <input type="text" class="foodname" name="name" required><br><br>
+            
+            <label for="employee_salary">Food Price</label><br>
+            <input type="number" class="foodprice" name="price" required><br><br>
+
+            <input type="submit" value="Add price" class="addPricebtn">
+        </form>
+        </div>
+
+ <div class="pricedata" style="border: solid;">
+    <table class="table table-striped">
+        <thead>
+            <th>
+                Food id
+            </th>
+            <th>
+                Food Name
+            </th>
+          
+            <th>
+                Price
+            </th>
+            
+        </thead>
+        <tbody class="price-tbody">
+           
+        </tbody>
+    </table>
+</div>
+    <script src="admin-price.js"></script>
+</body>
+</html>
